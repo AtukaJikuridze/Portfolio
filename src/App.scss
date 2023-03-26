@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=K2D:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: rgba(40, 44, 51, 1);
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+h1 {
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 42px;
+  color: #ffffff;
+}
+h2 {
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+p {
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #abb2bf;
+}
+span {
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 500;
+}
+button {
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  border: 1px solid #c778dd;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: #c778dd;
+    background: #ffffff;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      0px -4px 10px rgba(255, 255, 255, 0.3);
+  }
+}
