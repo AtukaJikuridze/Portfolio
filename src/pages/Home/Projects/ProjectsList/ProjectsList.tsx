@@ -4,7 +4,7 @@ import "./ProjectsList.css";
 export default function ProjectsList() {
   return (
     <div className="project-list">
-      {ProjectsAPI.map((e) => (
+      {ProjectsAPI.slice(0, 4).map((e) => (
         <Project />
       ))}
     </div>

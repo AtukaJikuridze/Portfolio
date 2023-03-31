@@ -1,0 +1,42 @@
+.skills {
+  padding: 100px 0px;
+}
+.skills .skills-header-text {
+  margin-bottom: 50px;
+}
+.skills .skills-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-flex .skills-leftside {
+  width: 50%;
+}
+.skills .skills-flex .skills-rightside {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.skills .skills-flex .skills-rightside .skill {
+  border: 1px solid #abb2bf;
+  width: 230px;
+  padding: 40px 20px 15px 20px;
+  position: relative;
+}
+.skills .skills-flex .skills-rightside .skill h3 {
+  font-size: 16px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  padding: 0px 20px;
+  border: 1px solid #abb2bf;
+}
+.skills .skills-flex .skills-rightside .skill p {
+  margin-right: 5px;
+  font-size: 14px;
+}
+.skills .skills-flex .skills-rightside .skill .info-list {
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=Skills.css.map */
