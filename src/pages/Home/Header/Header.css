@@ -1,13 +1,10 @@
 header {
-  padding: 60px 0px;
+  padding: 100px 0px 180px 0px;
 }
 header .header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .header-flex .header-leftside span {
-  color: rgb(199, 120, 221);
 }
 header .header-flex .header-leftside p {
   margin: 30px 0px;
@@ -23,6 +20,7 @@ header .header-flex .header-rightside::before {
   top: 0px;
   width: 100%;
   height: 100%;
+  animation: pic-bg 4s infinite linear;
 }
 header .header-flex .header-rightside img {
   transform: scale(1.2) translateY(-70px);
@@ -43,4 +41,44 @@ header .header-flex .header-rightside .image-bottomside .cube {
   width: 16px;
   background: #c778dd;
   height: 16px;
+}
+header .subtext-main {
+  padding: 100px 0px;
+}
+header .subtext-main .subtext {
+  padding: 32px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #282c33;
+  border: 1px solid #abb2bf;
+  position: relative;
+}
+header .subtext-main .subtext img {
+  position: absolute;
+}
+header .subtext-main .subtext img.sub-icon1 {
+  left: 15px;
+  top: -15px;
+}
+header .subtext-main .subtext img.sub-icon2 {
+  right: 15px;
+  bottom: -15px;
+}
+header .subtext-main .subtext h2 {
+  font-size: 23px;
+}
+
+@keyframes pic-bg {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=Header.css.map */

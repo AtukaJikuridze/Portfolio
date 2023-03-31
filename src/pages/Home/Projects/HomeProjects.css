@@ -1,0 +1,9 @@
+.home-projects .home-projects-header {
+  margin-bottom: 50px;
+}
+.home-projects .home-projects-header .projects-header-flex {
+  display: flex;
+}
+.home-projects .home-projects-header .projects-header-flex span:nth-child(2) {
+  margin-left: 10px;
+}/*# sourceMappingURL=HomeProjects.css.map */

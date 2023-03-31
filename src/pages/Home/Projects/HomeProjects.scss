@@ -1,0 +1,11 @@
+.home-projects {
+  .home-projects-header {
+    margin-bottom: 50px;
+    .projects-header-flex {
+      display: flex;
+      span:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

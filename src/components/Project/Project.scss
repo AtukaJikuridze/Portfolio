@@ -1,0 +1,28 @@
+.project {
+  width: 25%;
+  border: 1px solid #abb2bf;
+
+  img {
+    height: 201px;
+    width: 100%;
+  }
+  .made-with {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #abb2bf;
+    padding: 10px 20px;
+  }
+  .project-info {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .project-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  h3 {
+    margin-top: 10px;
+  }
+}

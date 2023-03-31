@@ -1,6 +1,9 @@
 nav {
   padding: 30px 0px;
 }
+nav a {
+  color: unset;
+}
 nav .nav-leftside-contacts {
   padding-left: 20px;
   display: flex;

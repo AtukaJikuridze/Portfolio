@@ -15,13 +15,31 @@ export default function Navbar() {
       <div className="nav-leftside-contacts">
         <div className="line"></div>
         <div className="social">
-          <AiOutlineInstagram />
+          <a
+            href="https://www.instagram.com/jikuridzeatuka/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineInstagram />
+          </a>
         </div>
         <div className="social">
-          <AiOutlineLinkedin />
+          <a
+            href="https://www.linkedin.com/in/avto-jikuridze-a4167b26b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineLinkedin />
+          </a>
         </div>
         <div className="social">
-          <AiOutlineGithub />
+          <a
+            href="https://github.com/AtukaJikuridze"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineGithub />
+          </a>
         </div>
       </div>
       <div className="navbar-container container">
