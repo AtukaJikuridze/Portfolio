@@ -16,6 +16,7 @@
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
+  justify-content: right;
 }
 .skills .skills-flex .skills-rightside .skill {
   border: 1px solid #abb2bf;

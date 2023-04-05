@@ -1,0 +1,40 @@
+footer {
+  padding: 50px 0px;
+  position: relative;
+}
+footer .footer-bottomside {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+footer .footer-border {
+  border-top: 1px solid #abb2bf;
+  padding: 50px 0px 20px 0px;
+}
+footer .footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-flex .footer-leftside .my-gmail {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+footer .footer-flex .footer-rightside h3 {
+  margin-bottom: 10px;
+}
+footer .footer-flex .footer-rightside .media-flex {
+  display: flex;
+  gap: 10px;
+}
+footer .footer-flex .footer-rightside .media-flex svg {
+  color: #abb2bf;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer .footer-flex .footer-rightside .media-flex svg:hover {
+  color: #fff;
+}/*# sourceMappingURL=Footer.css.map */

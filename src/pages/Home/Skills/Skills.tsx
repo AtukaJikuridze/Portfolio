@@ -1,4 +1,5 @@
 import { SkillsAPI } from "../../../API/SkillsAPI";
+import { SectionTitle } from "../../../components/SectionTitle";
 import skillsBG from "../../../images/icons/SkillsBG.png";
 import Skill from "./Skill";
 import "./Skills.css";
@@ -7,7 +8,7 @@ export default function Skills() {
     <div className="skills">
       <div className="container">
         <h3 className="skills-header-text">
-          <span>#</span>skills <span>------------------------</span>
+          <SectionTitle title="skills" />
         </h3>
         <div className="skills-flex">
           <div className="skills-leftside">
@@ -15,7 +16,7 @@ export default function Skills() {
           </div>
           <div className="skills-rightside">
             {SkillsAPI.map((e) => (
-              <Skill title={e.title} list={e.list} />
+              <Skill key={Math.random()} title={e.title} list={e.list} />
             ))}
           </div>
         </div>

@@ -11,8 +11,8 @@ export default function Skill({ title, list }: skillsInterface) {
         {list
           .join(",")
           .split(" ")
-          .map((e) => (
-            <p>{e}</p>
+          .map((e, i) => (
+            <p key={i}>{e}</p>
           ))}
       </div>
     </div>

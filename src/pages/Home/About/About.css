@@ -1,0 +1,52 @@
+.about {
+  padding: 100px 0px 50px 0px;
+}
+.about .about-flex {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-flex .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+}
+.about .about-flex .about-info p {
+  margin-bottom: 50px;
+}
+.about .about-flex .about-image {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+.about .about-flex .about-image::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../images/MyPictures/mipic2-background.png);
+  left: -50px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about .about-flex .about-image::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../../images/MyPictures/mipic2-background.png);
+  right: -100px;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about .about-flex .about-image img {
+  filter: brightness(0.9);
+  transform: translateY(-100px);
+}/*# sourceMappingURL=About.css.map */

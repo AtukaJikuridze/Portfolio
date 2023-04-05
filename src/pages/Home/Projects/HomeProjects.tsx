@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./HomeProjects.css";
 import ProjectsList from "./ProjectsList/ProjectsList";
+import { SectionTitle } from "../../../components/SectionTitle";
 
 export default function HomeProjects() {
   return (
@@ -8,10 +9,7 @@ export default function HomeProjects() {
       <div className="container">
         <div className="home-projects-header">
           <div className="projects-header-flex">
-            <h2>
-              <span>#</span>projects
-              <span>--------------------------------------</span>
-            </h2>
+            <SectionTitle title="projects" />
             <Link to={"/"}>View All {"~~>"}</Link>
           </div>
         </div>

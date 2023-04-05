@@ -1,38 +1,29 @@
-export const ProjectsAPI = [
-  {
-    image: "",
-    title: "Hello",
-    host: "Hai",
-    madeWith: ["HTML", "SCSS", "JS"],
-  },
-  {
-    image: "",
-    title: "Hello",
-    host: "Hai",
-    madeWith: ["HTML", "SCSS", "JS"],
-  },
-  {
-    image: "",
-    title: "Hello",
-    host: "Hai",
-    madeWith: ["HTML", "SCSS", "JS"],
-  },
-  {
-    image: "",
-    title: "Hello",
-    host: "Hai",
-    madeWith: ["HTML", "SCSS", "JS"],
-  },
-  {
-    image: "",
-    title: "Hello",
-    host: "Hai",
-    madeWith: ["HTML", "SCSS", "JS"],
-  },
-  {
-    image: "",
-    title: "Hello",
-    host: "Hai",
-    madeWith: ["HTML", "SCSS", "JS"],
-  },
-];
+export const ProjectsAPI = {
+  completedProjects: [
+    {
+      image: "",
+      title: "",
+      madeWith: ["React.js", "SCSS"],
+    },
+    {
+      image: "",
+      title: "",
+      madeWith: ["React.js", "SCSS"],
+    },
+    {
+      image: "",
+      title: "",
+      madeWith: ["React.js", "SCSS"],
+    },
+    {
+      image: "",
+      title: "",
+      madeWith: ["React.js", "SCSS"],
+    },
+    {
+      image: "",
+      title: "",
+      madeWith: ["React.js", "SCSS"],
+    },
+  ],
+};

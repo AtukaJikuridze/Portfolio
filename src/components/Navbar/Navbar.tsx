@@ -46,7 +46,7 @@ export default function Navbar() {
         <img src={logo} alt="" />
         <ul>
           {NavLinkAPI.map((e, i) => (
-            <li>
+            <li key={i}>
               <Link
                 onClick={() => setActive(i)}
                 className={active === i ? "navlink-active" : ""}
