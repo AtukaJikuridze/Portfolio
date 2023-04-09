@@ -1,5 +1,5 @@
 .projects-page {
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 .projects-page .projects-header {
   margin-bottom: 100px;
@@ -9,4 +9,8 @@
 }
 .projects-page .projects-main {
   padding: 50px 0px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=ProjectsPage.css.map */

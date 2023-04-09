@@ -14,7 +14,6 @@ export default function About() {
             <p>
               I’m a self-taught front-end developer based in Kyiv, Ukraine. I
               can develop responsive websites from scratch and raise them into
-              modern user-friendly web experiences.{" "}
             </p>
             <p>
               Transforming my creativity and knowledge into a websites has been

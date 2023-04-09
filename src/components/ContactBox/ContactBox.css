@@ -1,0 +1,20 @@
+.contact-info {
+  border: 1px solid #abb2bf;
+  padding: 16px;
+}
+.contact-info h4 {
+  margin-bottom: 10px;
+}
+.contact-info .flex-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.contact-info .flex-contact-info svg {
+  color: #abb2bf;
+  font-size: 20px;
+}
+.contact-info p {
+  letter-spacing: 1px;
+}/*# sourceMappingURL=ContactBox.css.map */

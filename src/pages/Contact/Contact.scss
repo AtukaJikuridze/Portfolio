@@ -1,0 +1,98 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    border: 1px solid #fff;
+    right: -100px;
+    top: 50%;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/MyPictures/mipic2-background.png);
+    background-repeat: no-repeat;
+    width: 155px;
+    height: 155px;
+    left: -30px;
+    bottom: 0px;
+  }
+  .header-p {
+    color: #fff;
+    margin-top: 50px;
+  }
+  .my-info {
+    margin: 70px 0px;
+
+    .my-info-p {
+      width: 500px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .all-media {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .media-main {
+      width: 19%;
+      .media {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0px;
+        transition: 0.3s;
+        cursor: pointer;
+        svg {
+          font-size: 19px;
+          color: #abb2bf;
+          transition: 0.3s;
+        }
+        p {
+          font-size: 19px;
+          transition: 0.3s;
+        }
+        &:hover {
+          svg,
+          p {
+            color: #fff;
+          }
+          .media-arrow {
+            transform: translateX(8px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    .all-media {
+      .media-main {
+        width: 50%;
+        .media {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .contact {
+    .all-media {
+      .media-main {
+        width: 100%;
+        .media {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

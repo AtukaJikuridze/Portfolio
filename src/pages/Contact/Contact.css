@@ -1,0 +1,86 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+.contact:before {
+  content: "";
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  border: 1px solid #fff;
+  right: -100px;
+  top: 50%;
+}
+.contact:after {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/MyPictures/mipic2-background.png);
+  background-repeat: no-repeat;
+  width: 155px;
+  height: 155px;
+  left: -30px;
+  bottom: 0px;
+}
+.contact .header-p {
+  color: #fff;
+  margin-top: 50px;
+}
+.contact .my-info {
+  margin: 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .my-info .my-info-p {
+  width: 500px;
+}
+.contact .all-media {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact .all-media .media-main {
+  width: 19%;
+}
+.contact .all-media .media-main .media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.contact .all-media .media-main .media svg {
+  font-size: 19px;
+  color: #abb2bf;
+  transition: 0.3s;
+}
+.contact .all-media .media-main .media p {
+  font-size: 19px;
+  transition: 0.3s;
+}
+.contact .all-media .media-main .media:hover svg,
+.contact .all-media .media-main .media:hover p {
+  color: #fff;
+}
+.contact .all-media .media-main .media:hover .media-arrow {
+  transform: translateX(8px);
+}
+
+@media screen and (max-width: 1200px) {
+  .contact .all-media .media-main {
+    width: 50%;
+  }
+  .contact .all-media .media-main .media {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .contact .all-media .media-main {
+    width: 100%;
+  }
+  .contact .all-media .media-main .media {
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=Contact.css.map */

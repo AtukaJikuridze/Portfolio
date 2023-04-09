@@ -7,12 +7,9 @@ export const NavLinkAPI = [
     title: "projects",
     navigateTo: "Projects",
   },
-  {
-    title: "about us",
-    navigateTo: "About",
-  },
+
   {
     title: "contacts",
-    navigateTo: "Contacts",
+    navigateTo: "Contact",
   },
 ];

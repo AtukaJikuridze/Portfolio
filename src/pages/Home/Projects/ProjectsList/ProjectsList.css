@@ -1,5 +1,5 @@
 .project-list {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=ProjectsList.css.map */

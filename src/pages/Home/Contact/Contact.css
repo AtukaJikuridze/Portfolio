@@ -9,24 +9,4 @@
 }
 .contact .contact-flex .leftside-p {
   width: 500px;
-}
-.contact .contact-flex .contact-info {
-  border: 1px solid #abb2bf;
-  padding: 16px;
-}
-.contact .contact-flex .contact-info h4 {
-  margin-bottom: 10px;
-}
-.contact .contact-flex .contact-info .flex-contact-info {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-.contact .contact-flex .contact-info .flex-contact-info svg {
-  color: #abb2bf;
-  font-size: 20px;
-}
-.contact .contact-flex .contact-info p {
-  letter-spacing: 1px;
 }/*# sourceMappingURL=Contact.css.map */

@@ -1,23 +1,35 @@
 import "./Project.css";
-export default function Project() {
+interface ProjectProps {
+  madeWith: Array<string>;
+  title: string;
+  image?: string;
+  live: string;
+  github: string;
+}
+export default function Project({
+  madeWith,
+  title,
+  image,
+  live,
+  github,
+}: ProjectProps) {
+  const openInNewTab = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="project">
-      <img
-        src="https://hbomax-images.warnermediacdn.com/images/GYGQHcghdiIjDXAEAAAHA/tileburnedin?size=1280x720&partner=hbomaxcom&v=3c2fac40133a551c820086f82bd1866d&host=art-gallery.api.hbo.com&language=en-us&w=1280"
-        alt=""
-      />
+      {image ? <img src={image} alt="" /> : null}
       <div className="made-with">
-        <p>HTML</p>
-        <p>SCSS</p>
-        <p>Python</p>
-        <p>Flask</p>
+        {madeWith.map((e: string, i: number) => (
+          <p key={i}>{e}</p>
+        ))}
       </div>
       <div className="project-info">
-        <h3>ChertNodes</h3>
-        <p>Minecraft servers hosting </p>
+        <h3>{title}</h3>
+        <p>Github servers hosting </p>
         <div className="project-buttons">
-          <button>Live {"<~>"}</button>
-          <button>Github {">="}</button>
+          <button onClick={() => openInNewTab(live)}>Live {"<~>"}</button>
+          <button onClick={() => openInNewTab(github)}>Github {">="}</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,20 @@
+.contact-info {
+  border: 1px solid #abb2bf;
+  padding: 16px;
+  h4 {
+    margin-bottom: 10px;
+  }
+  .flex-contact-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    svg {
+      color: #abb2bf;
+      font-size: 20px;
+    }
+  }
+  p {
+    letter-spacing: 1px;
+  }
+}

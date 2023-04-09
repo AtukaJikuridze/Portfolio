@@ -1,3 +1,4 @@
+import ContactBox from "../../../components/ContactBox/ContactBox";
 import { SectionTitle } from "../../../components/SectionTitle";
 import "./Contact.css";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
@@ -12,17 +13,7 @@ export default function Contact() {
             I’m interested in freelance opportunities. However, if you have
             other request or question, don’t hesitate to contact me
           </p>
-          <div className="contact-info">
-            <h4>Message me here</h4>
-            <div className="flex-contact-info">
-              <AiOutlineMail />
-              <p>avtojikuridze@gmail.com</p>
-            </div>
-            <div className="flex-contact-info">
-              <AiOutlineInstagram />
-              <p>jikuridzeatuka</p>
-            </div>
-          </div>
+          <ContactBox />
         </div>
       </div>
     </div>

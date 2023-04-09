@@ -10,7 +10,7 @@ export const SkillsAPI = [
 
   {
     title: "Frameworks",
-    list: ["React.js"],
+    list: ["React.js", "JQUERY"],
   },
 
   {

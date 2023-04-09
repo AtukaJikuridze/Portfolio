@@ -10,7 +10,7 @@ export default function HomeProjects() {
         <div className="home-projects-header">
           <div className="projects-header-flex">
             <SectionTitle title="projects" />
-            <Link to={"/"}>View All {"~~>"}</Link>
+            <Link to={"/Projects"}>View All {"~~>"}</Link>
           </div>
         </div>
         <ProjectsList />
