@@ -64,7 +64,7 @@ export const ProjectsAPI = {
     {
       title: "TodoList",
       madeWith: ["React.js", "SCSS"],
-      live: "",
+      live: "https://atukajikuridze.github.io/TodoApp/",
       github: "https://github.com/AtukaJikuridze/TodoApp",
     },
     {

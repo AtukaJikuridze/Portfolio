@@ -5,9 +5,8 @@ export default function About() {
   return (
     <div className="about">
       <div className="container">
-        <h3>
-          <SectionTitle title="About me" />
-        </h3>
+        <SectionTitle title="About me" />
+
         <div className="about-flex">
           <div className="about-info">
             <p>Hello, i’m Elias!</p>

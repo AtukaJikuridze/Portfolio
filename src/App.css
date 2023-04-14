@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: rgb(40, 44, 51);
   padding-top: 100px;
@@ -90,4 +94,30 @@ button:hover {
   color: #c778dd;
   background: #ffffff;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+.section-title span {
+  font-size: 25px;
+}
+.section-title .section-title-dash {
+  width: 300px;
+  background-color: #c778dd;
+  height: 2.7px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 590px) {
+  .section-title .section-title-dash {
+    display: flex;
+    overflow: hidden;
+    width: 100px;
+  }
+  .section-title h3 {
+    white-space: nowrap;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=App.css.map */

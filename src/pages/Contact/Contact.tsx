@@ -1,8 +1,11 @@
-import { AiFillAccountBook, AiOutlineFacebook } from "react-icons/ai";
 import ContactBox from "../../components/ContactBox/ContactBox";
 import "./Contact.css";
 import AllMedia from "./AllMedia";
+import { useEffect } from "react";
 export default function Contact() {
+  useEffect(() => {
+    console.log(true);
+  });
   return (
     <div className="contact">
       <div className="container">

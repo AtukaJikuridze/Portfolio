@@ -11,3 +11,16 @@
     }
   }
 }
+
+@media screen and (max-width: 771px) {
+  .home-projects-header {
+    .projects-header-flex {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      span:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

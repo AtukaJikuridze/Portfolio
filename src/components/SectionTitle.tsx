@@ -1,8 +1,9 @@
-export const SectionTitle = (props: { title: string }) => {
+export function SectionTitle(props: { title: string }) {
   return (
-    <h3>
+    <div className="section-title">
       <span>#</span>
-      {props.title} <span>---------------------</span>
-    </h3>
+      <h3>{props.title}</h3>
+      <div className="section-title-dash"></div>
+    </div>
   );
-};
+}

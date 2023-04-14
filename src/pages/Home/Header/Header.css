@@ -20,7 +20,7 @@ header .header-flex .header-rightside::before {
   top: 0px;
   width: 100%;
   height: 100%;
-  animation: pic-bg 4s infinite linear;
+  animation: pic-bg 3.4s infinite linear;
 }
 header .header-flex .header-rightside img {
   transform: scale(1.2) translateY(-70px);
@@ -77,8 +77,27 @@ header .subtext-main .subtext h2 {
   }
   50% {
     transform: translateY(30px);
+    opacity: 0.4;
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .header-flex .header-leftside h1 {
+    font-size: 30px;
+  }
+  .header-flex .header-rightside::before {
+    background-position: center;
+  }
+  .header-flex .header-rightside .my-image img {
+    width: 100%;
   }
 }/*# sourceMappingURL=Header.css.map */

@@ -16,8 +16,9 @@ export default function ProjectsPage() {
         <SectionTitle title="completed-projects" />
 
         <div className="team-projects projects-main">
-          {ProjectsAPI.completedProjects.map((e) => (
+          {ProjectsAPI.completedProjects.map((e, i) => (
             <Project
+              key={i}
               madeWith={e.madeWith}
               title={e.title}
               image={e.image}
@@ -30,8 +31,9 @@ export default function ProjectsPage() {
         <SectionTitle title="team-projects" />
 
         <div className="team-projects projects-main">
-          {ProjectsAPI.teamProjects.map((e) => (
+          {ProjectsAPI.teamProjects.map((e, i) => (
             <Project
+              key={i}
               madeWith={e.madeWith}
               title={e.title}
               image={e.image}
@@ -43,8 +45,9 @@ export default function ProjectsPage() {
 
         <SectionTitle title="small-projects" />
         <div className="completed-projects projects-main">
-          {ProjectsAPI.smallProjects.map((e) => (
+          {ProjectsAPI.smallProjects.map((e, i) => (
             <Project
+              key={i}
               madeWith={e.madeWith}
               title={e.title}
               live={e.live}

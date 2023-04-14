@@ -7,9 +7,7 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="container">
-        <h3 className="skills-header-text">
-          <SectionTitle title="skills" />
-        </h3>
+        <SectionTitle title="skills" />
         <div className="skills-flex">
           <div className="skills-leftside">
             <img src={skillsBG} alt="" />

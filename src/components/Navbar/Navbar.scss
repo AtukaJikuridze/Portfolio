@@ -5,6 +5,9 @@ nav {
   top: 0px;
   background: rgba(40, 44, 51, 1);
   z-index: 999;
+  img {
+    cursor: pointer;
+  }
 
   a {
     color: unset;
@@ -82,6 +85,18 @@ nav {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  nav {
+    .nav-leftside-contacts {
+      display: none;
+    }
+    .navbar-container {
+      flex-direction: column;
+      gap: 30px;
     }
   }
 }

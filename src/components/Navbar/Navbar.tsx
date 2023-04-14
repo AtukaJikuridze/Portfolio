@@ -1,5 +1,5 @@
 import logo from "../../images/icons/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
@@ -10,6 +10,7 @@ import { NavLinkAPI } from "../../API/NavLinkAPI";
 import { useState } from "react";
 export default function Navbar() {
   const [active, setActive] = useState<number>(0);
+  const navigate = useNavigate();
   return (
     <nav>
       <div className="nav-leftside-contacts">
@@ -43,7 +44,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbar-container container">
-        <img src={logo} alt="" />
+        <img onClick={() => navigate("/Home")} src={logo} alt="" />
         <ul>
           {NavLinkAPI.map((e, i) => (
             <li key={i}>

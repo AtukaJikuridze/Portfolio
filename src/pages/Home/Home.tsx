@@ -9,9 +9,9 @@ export default function Home() {
     <div>
       <Header />
       <HomeProjects />
-      <Skills />
-      <About />
-      <Contact />
+      <Skills />/
+      {/*  <About />
+      <Contact /> */}
     </div>
   );
 }

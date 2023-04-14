@@ -6,6 +6,7 @@
 }
 .skills .skills-flex {
   display: flex;
+  padding: 100px 0px 0px 0px;
   justify-content: space-between;
 }
 .skills .skills-flex .skills-leftside {
@@ -40,4 +41,33 @@
 .skills .skills-flex .skills-rightside .skill .info-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1050px) {
+  .skills .skills-leftside {
+    display: none;
+  }
+  .skills .skills-flex {
+    position: relative;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills .skills-flex .skills-leftside {
+    right: -30%;
+    position: absolute;
+    top: 0px;
+  }
+  .skills .skills-flex .skills-rightside {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills .skill {
+    width: 100% !important;
+    text-align: center;
+  }
+  .skills .skill .info-list {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Skills.css.map */

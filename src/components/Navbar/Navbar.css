@@ -6,6 +6,9 @@ nav {
   background: rgb(40, 44, 51);
   z-index: 999;
 }
+nav img {
+  cursor: pointer;
+}
 nav a {
   color: unset;
 }
@@ -76,4 +79,14 @@ nav .navbar-container ul li a:hover::before {
 }
 nav .navbar-container ul li a span {
   color: #c778dd;
+}
+
+@media screen and (max-width: 590px) {
+  nav .nav-leftside-contacts {
+    display: none;
+  }
+  nav .navbar-container {
+    flex-direction: column;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
