@@ -1,15 +1,15 @@
 export const NavLinkAPI = [
   {
     title: "home",
-    navigateTo: "Home",
+    navigateTo: "Portfolio/",
   },
   {
     title: "projects",
-    navigateTo: "Projects",
+    navigateTo: "Portfolio/Projects",
   },
 
   {
     title: "contacts",
-    navigateTo: "Contact",
+    navigateTo: "Portfolio/Contact",
   },
 ];

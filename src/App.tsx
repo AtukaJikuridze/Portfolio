@@ -17,11 +17,13 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Projects" element={<ProjectsPage />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Portfolio">
+          <Route index element={<Home />} />
+          <Route path="Projects" element={<ProjectsPage />} />
+          <Route path="Contact" element={<Contact />} />
+        </Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

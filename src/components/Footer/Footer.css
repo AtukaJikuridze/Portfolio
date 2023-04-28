@@ -37,4 +37,13 @@ footer .footer-flex .footer-rightside .media-flex svg {
 }
 footer .footer-flex .footer-rightside .media-flex svg:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-flex {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+  }
 }/*# sourceMappingURL=Footer.css.map */
