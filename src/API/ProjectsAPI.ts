@@ -6,6 +6,7 @@ import MovieWeb from "../images/projects/MovieWeb.png";
 import JaegarResto from "../images/projects/JaegarResto.png";
 import ZkittlesWeb from "../images/projects/ZkittlesWeb.png";
 import ModernWatch from "../images/projects/ModernWatch.png";
+import HyperBase from "../images/projects/HyperBase.png";
 export const ProjectsAPI = {
   completedProjects: [
     {
@@ -59,6 +60,14 @@ export const ProjectsAPI = {
       live: " https://moderndesigners.github.io/Food-Restaurant/",
       github: "https://github.com/ModernDesigners/Food-Restaurant",
     },
+    {
+      image: HyperBase,
+      title: "HyperBase",
+      madeWith: ["React.js", "SCSS"],
+
+      live: "https://moderndesigners.github.io/HyperBase/",
+      github: "https://github.com/ModernDesigners/HyperBase",
+    },
   ],
   smallProjects: [
     {
@@ -84,6 +93,12 @@ export const ProjectsAPI = {
       madeWith: ["HTML", "SCSS", "JQUERY"],
       live: "https://atukajikuridze.github.io/Nava/",
       github: "https://github.com/AtukaJikuridze/Nava",
+    },
+    {
+      title: "NAVA",
+      madeWith: ["React.js", "SCSS"],
+      live: "https://atukajikuridze.github.io/Nava/",
+      github: "https://atukajikuridze.github.io/ReactQuiz/",
     },
   ],
 };

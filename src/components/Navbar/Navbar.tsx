@@ -7,9 +7,12 @@ import {
 } from "react-icons/ai";
 import "./Navbar.css";
 import { NavLinkAPI } from "../../API/NavLinkAPI";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function Navbar() {
-  const [active, setActive] = useState<number>(0);
+  useEffect(() => {
+    setActive(location.pathname);
+  }, [location.pathname]);
+  const [active, setActive] = useState<string | null>(null);
   const navigate = useNavigate();
   return (
     <nav>
@@ -49,8 +52,10 @@ export default function Navbar() {
           {NavLinkAPI.map((e, i) => (
             <li key={i}>
               <Link
-                onClick={() => setActive(i)}
-                className={active === i ? "navlink-active" : ""}
+                onClick={() => setActive(e.navigateTo)}
+                className={
+                  active?.slice(1) === e.navigateTo ? "navlink-active" : ""
+                }
                 to={e.navigateTo}
               >
                 <span>#</span>

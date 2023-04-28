@@ -29,6 +29,7 @@
 
     .my-info-p {
       width: 500px;
+      max-width: 100%;
     }
     display: flex;
     align-items: center;
@@ -84,11 +85,25 @@
   }
 }
 
+@media screen and (max-width: 771px) {
+  .contact {
+    .my-info {
+      flex-direction: column;
+      gap: 50px;
+      text-align: center;
+    }
+  }
+}
 @media screen and (max-width: 590px) {
   .contact {
+    &::before {
+      display: none;
+    }
     .all-media {
       .media-main {
         width: 100%;
+        display: flex;
+        justify-content: center;
         .media {
           margin-bottom: 50px;
         }

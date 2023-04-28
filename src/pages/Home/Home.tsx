@@ -10,8 +10,8 @@ export default function Home() {
       <Header />
       <HomeProjects />
       <Skills />/
-      {/*  <About />
-      <Contact /> */}
+      <About />
+      {/* <Contact /> */}
     </div>
   );
 }

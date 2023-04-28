@@ -1,7 +1,9 @@
 import "./About.css";
 import MyImg from "../../../images/MyPictures/Pic2.png";
 import { SectionTitle } from "../../../components/SectionTitle";
+import { useNavigate } from "react-router";
 export default function About() {
+  const navigate = useNavigate();
   return (
     <div className="about">
       <div className="container">
@@ -9,18 +11,19 @@ export default function About() {
 
         <div className="about-flex">
           <div className="about-info">
-            <p>Hello, i’m Elias!</p>
+            <p>Hello, i’m Avto!</p>
             <p>
-              I’m a self-taught front-end developer based in Kyiv, Ukraine. I
-              can develop responsive websites from scratch and raise them into
+              I’m a self-taught front-end developer based in Tbilisi, Georgia. I
+              can develop responsive websites
             </p>
             <p>
               Transforming my creativity and knowledge into a websites has been
-              s my passion for over a year. I have been helping various clients
-              to etablish their presence online. I always strive to learn about
-              the newest technologies and frameworks.
+              s my passion for over a year. I always strive to learn about the
+              newest technologies and frameworks.
             </p>
-            <button>Read more {"->"}</button>
+            <button onClick={() => navigate("/Contact")}>
+              Read more {"->"}
+            </button>
           </div>
           <div className="about-image">
             <img src={MyImg} alt="" />

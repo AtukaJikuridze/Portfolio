@@ -50,3 +50,38 @@
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .about {
+    .about-flex {
+      .about-info {
+        width: 100%;
+        text-align: center;
+        button {
+          display: block;
+          margin: auto;
+        }
+      }
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .about {
+    .about-flex {
+      .about-image {
+        &::before,
+        &::after {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

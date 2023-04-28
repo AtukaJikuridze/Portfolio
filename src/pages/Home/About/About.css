@@ -49,4 +49,28 @@
 .about .about-flex .about-image img {
   filter: brightness(0.9);
   transform: translateY(-100px);
+}
+
+@media screen and (max-width: 991px) {
+  .about .about-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .about .about-flex .about-info {
+    width: 100%;
+    text-align: center;
+  }
+  .about .about-flex .about-info button {
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 770px) {
+  .about .about-flex .about-image::before, .about .about-flex .about-image::after {
+    display: none;
+  }
+  .about .about-flex .about-image img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=About.css.map */

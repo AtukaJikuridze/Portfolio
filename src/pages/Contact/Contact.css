@@ -33,6 +33,7 @@
 }
 .contact .my-info .my-info-p {
   width: 500px;
+  max-width: 100%;
 }
 .contact .all-media {
   margin-top: 50px;
@@ -76,9 +77,21 @@
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 771px) {
+  .contact .my-info {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 590px) {
+  .contact::before {
+    display: none;
+  }
   .contact .all-media .media-main {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .contact .all-media .media-main .media {
     margin-bottom: 50px;
