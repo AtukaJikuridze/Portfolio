@@ -3,12 +3,15 @@ import Contact from "./Contact/Contact";
 import Header from "./Header/Header";
 import HomeProjects from "./Projects/HomeProjects";
 import Skills from "./Skills/Skills";
-
-export default function Home() {
+interface projectsPage {
+  setIsOpen: Function;
+  setCloneInfo: Function;
+}
+export default function Home({ setIsOpen, setCloneInfo }: projectsPage) {
   return (
     <div>
       <Header />
-      <HomeProjects />
+      <HomeProjects setIsOpen={setIsOpen} setCloneInfo={setCloneInfo} />
       <Skills />/
       <About />
       <Contact />

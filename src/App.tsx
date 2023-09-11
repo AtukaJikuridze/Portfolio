@@ -7,31 +7,38 @@ import ProjectsPage from "./pages/Projects/ProjectsPage";
 import Contact from "./pages/Contact/Contact";
 import { useEffect, useState } from "react";
 import CloneRepository from "./components/CloneRepository/CloneRepository";
-import { ProjectsAPI } from "./API/ProjectsAPI";
 
 function App() {
   const location = useLocation();
+  const [cloneInfo, setCloneInfo] = useState<any>(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className={"App"}>
+    <div className="App">
       <Navbar />
       <CloneRepository
         setIsOpen={setIsOpen}
         isOpen={isOpen}
-        https={"1"}
-        ssh={""}
-        cli={""}
+        https={`https://github.com/${cloneInfo?.clone}.git`}
+        ssh={`git@github.com:${cloneInfo?.clone}.git`}
+        cli={`gh repo clone ${cloneInfo?.clone}`}
+        title={cloneInfo?.title}
       />
       <Routes>
         <Route path="/Portfolio">
-          <Route index element={<Home />} />
+          <Route
+            index
+            element={<Home setIsOpen={setIsOpen} setCloneInfo={setCloneInfo} />}
+          />
           <Route
             path="Projects"
-            element={<ProjectsPage setIsOpen={setIsOpen} />}
+            element={
+              <ProjectsPage setIsOpen={setIsOpen} setCloneInfo={setCloneInfo} />
+            }
           />
           <Route path="Contact" element={<Contact />} />
         </Route>

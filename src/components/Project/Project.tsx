@@ -6,7 +6,8 @@ interface ProjectProps {
   live: string;
   github: string;
   setIsOpen: Function;
-  
+  setCloneInfo: Function;
+  cloneInfo: any;
 }
 import { FaRegClone } from "react-icons/fa";
 
@@ -17,7 +18,8 @@ export default function Project({
   live,
   github,
   setIsOpen,
-
+  setCloneInfo,
+  cloneInfo,
 }: ProjectProps) {
   const openInNewTab = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -39,7 +41,7 @@ export default function Project({
           <FaRegClone
             onClick={() => {
               setIsOpen(true);
-      
+              setCloneInfo(cloneInfo);
             }}
           />
         </div>

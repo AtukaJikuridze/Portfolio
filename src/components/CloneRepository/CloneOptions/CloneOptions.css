@@ -24,9 +24,10 @@
   position: relative;
 }
 .clone-options .options .option .option-link p {
-  width: 95%;
+  width: 92%;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-wrap: nowrap;
 }
 .clone-options .options .option .option-link svg {
   cursor: pointer;

@@ -1,7 +1,14 @@
 import { ProjectsAPI } from "../../../../API/ProjectsAPI";
 import Project from "../../../../components/Project/Project";
 import "./ProjectsList.css";
-export default function ProjectsList() {
+interface homeProjects {
+  setIsOpen: Function;
+  setCloneInfo: Function;
+}
+export default function ProjectsList({
+  setIsOpen,
+  setCloneInfo,
+}: homeProjects) {
   return (
     <div className="project-list">
       {ProjectsAPI.completedProjects.slice(0, 4).map((e, i) => (
@@ -12,6 +19,12 @@ export default function ProjectsList() {
           image={e.image}
           live={e.live}
           github={e.github}
+          setIsOpen={setIsOpen}
+          setCloneInfo={setCloneInfo}
+          cloneInfo={{
+            title: e.title,
+            clone: e.clone,
+          }}
         />
       ))}
     </div>

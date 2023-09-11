@@ -7,12 +7,14 @@ interface cloneRep {
   https: string;
   ssh: string;
   cli: string;
+  title: string;
 }
 export default function CloneRepository({
   isOpen,
   setIsOpen,
   https,
   ssh,
+  title,
   cli,
 }: cloneRep) {
   return (
@@ -23,7 +25,7 @@ export default function CloneRepository({
         </div>
         <div className="clone-repository-content">
           <div className="header-text">
-            <h2>FurniroShop</h2>
+            <h2>{title}</h2>
             <p>Clone a repository</p>
           </div>
           <CloneOptions https={https} ssh={ssh} cli={cli} />

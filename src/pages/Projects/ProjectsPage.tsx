@@ -5,8 +5,12 @@ import { SectionTitle } from "../../components/SectionTitle";
 import "./ProjectsPage.css";
 interface projectsPage {
   setIsOpen: Function;
+  setCloneInfo: Function;
 }
-export default function ProjectsPage({ setIsOpen }: projectsPage) {
+export default function ProjectsPage({
+  setIsOpen,
+  setCloneInfo,
+}: projectsPage) {
   return (
     <div className="projects-page">
       <div className="container">
@@ -29,6 +33,11 @@ export default function ProjectsPage({ setIsOpen }: projectsPage) {
               image={e.image}
               live={e.live}
               github={e.github}
+              setCloneInfo={setCloneInfo}
+              cloneInfo={{
+                title: e.title,
+                clone: e.clone,
+              }}
             />
           ))}
         </div>
@@ -45,6 +54,11 @@ export default function ProjectsPage({ setIsOpen }: projectsPage) {
               image={e.image}
               live={e.live}
               github={e.github}
+              setCloneInfo={setCloneInfo}
+              cloneInfo={{
+                title: e.title,
+                clone: e.clone,
+              }}
             />
           ))}
         </div>
@@ -59,6 +73,11 @@ export default function ProjectsPage({ setIsOpen }: projectsPage) {
               title={e.title}
               live={e.live}
               github={e.github}
+              setCloneInfo={setCloneInfo}
+              cloneInfo={{
+                title: e.title,
+                clone: e.clone,
+              }}
             />
           ))}
         </div>

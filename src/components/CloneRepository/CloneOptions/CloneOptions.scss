@@ -22,9 +22,10 @@
         align-items: center;
         position: relative;
         p {
-          width: 95%;
+          width: 92%;
           overflow: hidden;
           text-overflow: ellipsis;
+          text-wrap: nowrap;
         }
         svg {
           cursor: pointer;

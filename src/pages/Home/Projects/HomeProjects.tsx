@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 import "./HomeProjects.css";
 import ProjectsList from "./ProjectsList/ProjectsList";
 import { SectionTitle } from "../../../components/SectionTitle";
-
-export default function HomeProjects() {
+interface projectsPage {
+  setIsOpen: Function;
+  setCloneInfo: Function;
+}
+export default function HomeProjects({
+  setIsOpen,
+  setCloneInfo,
+}: projectsPage) {
   return (
     <div className="home-projects">
       <div className="container">
@@ -13,7 +19,7 @@ export default function HomeProjects() {
             <Link to={"/Portfolio/Projects"}>View All {"~~>"}</Link>
           </div>
         </div>
-        <ProjectsList />
+        <ProjectsList setIsOpen={setIsOpen} setCloneInfo={setCloneInfo} />
       </div>
     </div>
   );

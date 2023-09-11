@@ -20,11 +20,7 @@ export default function CloneOptions({
           <h3>HTTPS:</h3>
           <div className="option-link">
             <p>{https}</p>
-            <FaRegClone
-              onClick={() =>
-                copyContent("https://github.com/AtukaJikuridze/FurniroShop.git")
-              }
-            />
+            <FaRegClone onClick={() => copyContent(https)} />
           </div>
         </div>
 
@@ -32,11 +28,7 @@ export default function CloneOptions({
           <h3>SSH:</h3>
           <div className="option-link">
             <p>{ssh}</p>
-            <FaRegClone
-              onClick={() =>
-                copyContent("git@github.com:AtukaJikuridze/FurniroShop.git")
-              }
-            />
+            <FaRegClone onClick={() => copyContent(ssh)} />
           </div>
         </div>
 
@@ -44,11 +36,7 @@ export default function CloneOptions({
           <h3>GitHub CLI:</h3>
           <div className="option-link">
             <p>{cli}</p>
-            <FaRegClone
-              onClick={() =>
-                copyContent("gh repo clone AtukaJikuridze/FurniroShop")
-              }
-            />
+            <FaRegClone onClick={() => copyContent(cli)} />
           </div>
         </div>
       </div>

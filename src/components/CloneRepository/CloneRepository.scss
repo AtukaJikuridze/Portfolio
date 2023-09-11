@@ -8,8 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: 0.2s;
+
   &.closed-box {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .clone-repository-box {
@@ -48,6 +52,44 @@
         }
         p {
           color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .clone-repository-main {
+    .clone-repository-box {
+      padding: 30px;
+      width: 70%;
+      height: 64%;
+      position: relative;
+      background-color: #fff;
+      .clone-repository-content {
+        height: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .clone-repository-main {
+    .clone-repository-box {
+      padding: 30px;
+      width: 86%;
+      height: 74%;
+      position: relative;
+      background-color: #fff;
+      .clone-repository-content {
+        .clone-options {
+          .options {
+            justify-content: space-around;
+            .option {
+              text-align: center;
+              margin: 0px;
+            }
+          }
         }
       }
     }
