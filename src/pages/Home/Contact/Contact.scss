@@ -8,6 +8,22 @@
 
     .leftside-p {
       width: 500px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    &::after {
+      display: none;
+    }
+    .contact-flex {
+      .leftside-p {
+        text-align: center;
+      }
+      flex-direction: column;
+      gap: 50px;
     }
   }
 }

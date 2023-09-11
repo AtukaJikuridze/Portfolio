@@ -14,7 +14,7 @@ export default function Header() {
             <p>
               i craft responsive websites where technologies meet creativity
             </p>
-            <button onClick={() => navigate("/Contact")}>Contact Me</button>
+            <button onClick={() => navigate("/Portfolio/Contact")}>Contact Me</button>
           </div>
           <div className="header-rightside">
             <div className="my-image">

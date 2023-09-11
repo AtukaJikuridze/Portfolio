@@ -1,8 +1,12 @@
 import { ProjectsAPI } from "../../API/ProjectsAPI";
+import CloneRepository from "../../components/CloneRepository/CloneRepository";
 import Project from "../../components/Project/Project";
 import { SectionTitle } from "../../components/SectionTitle";
 import "./ProjectsPage.css";
-export default function ProjectsPage() {
+interface projectsPage {
+  setIsOpen: Function;
+}
+export default function ProjectsPage({ setIsOpen }: projectsPage) {
   return (
     <div className="projects-page">
       <div className="container">
@@ -18,6 +22,7 @@ export default function ProjectsPage() {
         <div className="team-projects projects-main">
           {ProjectsAPI.completedProjects.map((e, i) => (
             <Project
+              setIsOpen={setIsOpen}
               key={i}
               madeWith={e.madeWith}
               title={e.title}
@@ -33,6 +38,7 @@ export default function ProjectsPage() {
         <div className="team-projects projects-main">
           {ProjectsAPI.teamProjects.map((e, i) => (
             <Project
+              setIsOpen={setIsOpen}
               key={i}
               madeWith={e.madeWith}
               title={e.title}
@@ -47,6 +53,7 @@ export default function ProjectsPage() {
         <div className="completed-projects projects-main">
           {ProjectsAPI.smallProjects.map((e, i) => (
             <Project
+              setIsOpen={setIsOpen}
               key={i}
               madeWith={e.madeWith}
               title={e.title}

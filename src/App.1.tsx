@@ -1,5 +1,4 @@
 import { Route, Routes, useLocation } from "react-router";
-import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -7,14 +6,14 @@ import ProjectsPage from "./pages/Projects/ProjectsPage";
 import Contact from "./pages/Contact/Contact";
 import { useEffect, useState } from "react";
 import CloneRepository from "./components/CloneRepository/CloneRepository";
-import { ProjectsAPI } from "./API/ProjectsAPI";
 
-function App() {
+export function App() {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
   const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [currentIndex, setProjectIndex] = useState(0);
 
   return (
     <div className={"App"}>
@@ -22,7 +21,7 @@ function App() {
       <CloneRepository
         setIsOpen={setIsOpen}
         isOpen={isOpen}
-        https={"1"}
+        https={""}
         ssh={""}
         cli={""}
       />
@@ -40,5 +39,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

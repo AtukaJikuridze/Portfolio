@@ -9,4 +9,18 @@
 }
 .contact .contact-flex .leftside-p {
   width: 500px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .contact::after {
+    display: none;
+  }
+  .contact .contact-flex {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact .contact-flex .leftside-p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=Contact.css.map */

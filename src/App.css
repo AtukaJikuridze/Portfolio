@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+.App.scroll-limit {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }

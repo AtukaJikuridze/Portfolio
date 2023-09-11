@@ -20,9 +20,20 @@
   flex-direction: column;
   gap: 15px;
 }
-.project .project-buttons {
+.project .project-info .project-buttons {
   display: flex;
+  align-items: center;
   gap: 20px;
+}
+.project .project-info .project-buttons svg {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project .project-info .project-buttons svg:hover {
+  transform: scale(1.15);
 }
 .project h3 {
   margin-top: 10px;

@@ -1,0 +1,39 @@
+.clone-options {
+  height: 100%;
+}
+.clone-options .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.clone-options .options .option {
+  margin: 20px 0px;
+}
+.clone-options .options .option h3 {
+  color: black;
+  margin-bottom: 5px;
+  font-size: 23px;
+}
+.clone-options .options .option .option-link {
+  background-color: #161b22;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.clone-options .options .option .option-link p {
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.clone-options .options .option .option-link svg {
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+}
+.clone-options .options .option .option-link svg:active {
+  color: rgb(167, 167, 167);
+}/*# sourceMappingURL=CloneOptions.css.map */

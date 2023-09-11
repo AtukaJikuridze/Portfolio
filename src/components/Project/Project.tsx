@@ -5,13 +5,19 @@ interface ProjectProps {
   image?: string;
   live: string;
   github: string;
+  setIsOpen: Function;
+  
 }
+import { FaRegClone } from "react-icons/fa";
+
 export default function Project({
   madeWith,
   title,
   image,
   live,
   github,
+  setIsOpen,
+
 }: ProjectProps) {
   const openInNewTab = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -30,6 +36,12 @@ export default function Project({
         <div className="project-buttons">
           <button onClick={() => openInNewTab(live)}>Live {"<~>"}</button>
           <button onClick={() => openInNewTab(github)}>Github {">="}</button>
+          <FaRegClone
+            onClick={() => {
+              setIsOpen(true);
+      
+            }}
+          />
         </div>
       </div>
     </div>

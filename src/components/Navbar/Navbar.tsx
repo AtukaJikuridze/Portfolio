@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbar-container container">
-        <img onClick={() => navigate("/Home")} src={logo} alt="" />
+        <img onClick={() => navigate("Portfolio/")} src={logo} alt="" />
         <ul>
           {NavLinkAPI.map((e, i) => (
             <li key={i}>

@@ -21,7 +21,7 @@ export default function About() {
               s my passion for over a year. I always strive to learn about the
               newest technologies and frameworks.
             </p>
-            <button onClick={() => navigate("/Contact")}>
+            <button onClick={() => navigate("/Portfolio/Contact")}>
               Read more {"->"}
             </button>
           </div>

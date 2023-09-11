@@ -21,7 +21,7 @@ export const ProjectsAPI = {
       title: "HooBank",
       madeWith: ["React.js", "SCSS"],
       live: "https://atukajikuridze.github.io/hoobank/",
-      github: "https://github.com/AtukaJikuridze/FrightLand",
+      github: "https://github.com/AtukaJikuridze/HooBank",
     },
     {
       image: FrightLand,
@@ -95,10 +95,16 @@ export const ProjectsAPI = {
       github: "https://github.com/AtukaJikuridze/Nava",
     },
     {
-      title: "NAVA",
+      title: "ReactQuiz",
       madeWith: ["React.js", "SCSS"],
-      live: "https://atukajikuridze.github.io/Nava/",
-      github: "https://atukajikuridze.github.io/ReactQuiz/",
+      live: "https://atukajikuridze.github.io/ReactQuiz/",
+      github: "https://github.com/AtukaJikuridze/ReactQuiz",
+    },
+    {
+      title: "FurniroShop",
+      madeWith: ["React.js", "SCSS"],
+      live: "https://atukajikuridze.github.io/FurniroShop/",
+      github: "https://github.com/AtukaJikuridze/FurniroShop",
     },
   ],
 };

@@ -1,0 +1,41 @@
+.clone-options {
+  height: 100%;
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    .option {
+      margin: 20px 0px;
+      h3 {
+        color: black;
+        margin-bottom: 5px;
+        font-size: 23px;
+      }
+      .option-link {
+        background-color: #161b22;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        p {
+          width: 95%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        svg {
+          cursor: pointer;
+          color: #fff;
+          position: absolute;
+          right: 10px;
+          &:active {
+            color: rgb(167, 167, 167);
+          }
+        }
+      }
+    }
+  }
+}
