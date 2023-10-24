@@ -30,6 +30,6 @@ export const AllMediaAPI = [
   {
     title: "Gmail",
     icon: AiOutlineMail,
-    link: "https://avtojikuridze@gmail.com",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=avtojikuridze@gmail.com&body=my-text",
   },
 ];

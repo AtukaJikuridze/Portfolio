@@ -10,7 +10,7 @@ import { NavLinkAPI } from "../../API/NavLinkAPI";
 import { useEffect, useState } from "react";
 export default function Navbar() {
   useEffect(() => {
-    setActive(location.pathname);
+     
   }, [location.pathname]);
   const [active, setActive] = useState<string | null>(null);
   const navigate = useNavigate();
