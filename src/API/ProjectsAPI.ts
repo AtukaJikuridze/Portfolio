@@ -7,6 +7,7 @@ import ZkittlesWeb from "../images/projects/ZkittlesWeb.webp";
 import ModernWatch from "../images/projects/ModernWatch.webp";
 import HyperBase from "../images/projects/HyperBase.webp";
 import ModernBank from "../images/projects/ModernBank.webp";
+import CustomizedTodo from "../images/projects/Customized-Todo.webp";
 export const ProjectsAPI = {
   completedProjects: [
     {
@@ -40,6 +41,14 @@ export const ProjectsAPI = {
       live: "https://atukajikuridze.github.io/FoodMart/",
       github: "https://github.com/AtukaJikuridze/FoodMart",
       clone: "AtukaJikuridze/FoodMart",
+    },
+    {
+      image: CustomizedTodo,
+      title: "Customized-Todo",
+      madeWith: ["React.js", "SCSS"],
+      live: "https://atukajikuridze.github.io/Customized-Todo/",
+      github: "https://github.com/AtukaJikuridze/Customized-Todo",
+      clone: "AtukaJikuridze/Customized-Todo",
     },
   ],
   teamProjects: [

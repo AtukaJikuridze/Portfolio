@@ -9,10 +9,11 @@ import "./Navbar.css";
 import { NavLinkAPI } from "../../API/NavLinkAPI";
 import { useEffect, useState } from "react";
 export default function Navbar() {
-  useEffect(() => {
-     
-  }, [location.pathname]);
   const [active, setActive] = useState<string | null>(null);
+
+  useEffect(() => {
+    setActive(location.pathname.slice(1));
+  }, [location.pathname]);
   const navigate = useNavigate();
   return (
     <nav>
@@ -53,9 +54,7 @@ export default function Navbar() {
             <li key={i}>
               <Link
                 onClick={() => setActive(e.navigateTo)}
-                className={
-                  active?.slice(1) === e.navigateTo ? "navlink-active" : ""
-                }
+                className={active === e.navigateTo ? "navlink-active" : ""}
                 to={e.navigateTo}
               >
                 <span>#</span>
