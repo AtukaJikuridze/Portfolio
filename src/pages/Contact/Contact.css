@@ -31,8 +31,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.contact .my-info .my-info-p {
-  width: 500px;
+.contact .my-info p {
+  width: 80%;
   max-width: 100%;
 }
 .contact .all-media {
@@ -69,7 +69,21 @@
   transform: translateX(8px);
 }
 
+.my-info-leftside-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1200px) {
+  .contact .my-info {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  .contact .my-info p {
+    width: 100%;
+  }
   .contact .all-media .media-main {
     width: 50%;
   }

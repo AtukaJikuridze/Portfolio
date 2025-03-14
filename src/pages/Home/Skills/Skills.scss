@@ -14,15 +14,15 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      align-items: center;
       justify-content: right;
       .skill {
         border: 1px solid #abb2bf;
-        width: 230px;
+        width: 260px;
         padding: 40px 20px 15px 20px;
         position: relative;
+
         h3 {
-          font-size: 16px;
+          font-size: 15px;
           position: absolute;
           top: 0px;
           width: 100%;
@@ -31,12 +31,12 @@
           border: 1px solid #abb2bf;
         }
         p {
-          margin-right: 5px;
           font-size: 14px;
         }
         .info-list {
           display: flex;
           flex-wrap: wrap;
+          gap: 6px;
         }
       }
     }

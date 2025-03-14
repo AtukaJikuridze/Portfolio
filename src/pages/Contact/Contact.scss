@@ -24,16 +24,16 @@
     color: #fff;
     margin-top: 50px;
   }
+
   .my-info {
     margin: 70px 0px;
-
-    .my-info-p {
-      width: 500px;
-      max-width: 100%;
-    }
     display: flex;
     align-items: center;
     justify-content: space-between;
+    p {
+      width: 80%;
+      max-width: 100%;
+    }
   }
   .all-media {
     margin-top: 50px;
@@ -71,8 +71,23 @@
     }
   }
 }
+.my-info-leftside-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 @media screen and (max-width: 1200px) {
+  .contact {
+    .my-info {
+      flex-direction: column;
+      gap: 50px;
+      text-align: center;
+      p {
+        width: 100%;
+      }
+    }
+  }
   .contact {
     .all-media {
       .media-main {
