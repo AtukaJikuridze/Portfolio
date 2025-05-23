@@ -2,6 +2,7 @@ import ContactBox from "../../components/ContactBox/ContactBox";
 import "./Contact.css";
 import AllMedia from "./AllMedia";
 import { useEffect } from "react";
+import ExperienceList from "../../components/ContactBox/ExperienceList";
 export default function Contact() {
   return (
     <div className="contact">
@@ -53,38 +54,7 @@ export default function Contact() {
               <p>- IT Step Academy - Programming from Zero (Completed)</p>
             </div>
 
-            <div className="contact-experience">
-              <p>
-                <strong>📍 Experience:</strong>
-              </p>
-              <br />
-
-              <p>
-                <strong>Freelance Front-End Developer</strong> (September 2023 –
-                February 2025, Tbilisi, Georgia)
-              </p>
-              <p>- Built and maintained multiple client projects</p>
-              <p>
-                - Created interactive and responsive user interfaces using React
-                & TypeScript
-              </p>
-              <br />
-              <p>
-                <strong>Next.js Developer at Mentor </strong> (March 2025 –
-                Present)
-              </p>
-              <p>
-                - Responsible for maintaining and developing the company website
-              </p>
-              <p>
-                - Implemented new features for the platform as the startup
-                entered a new phase
-              </p>
-              <p>
-                - Collaborated closely with the team to ensure smooth deployment
-                and scalability
-              </p>
-            </div>
+            <ExperienceList />
           </div>
 
           <ContactBox />

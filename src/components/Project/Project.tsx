@@ -4,7 +4,7 @@ interface ProjectProps {
   title: string;
   image?: string;
   live: string;
-  github: string;
+  github: string | null;
   setIsOpen: Function;
   setCloneInfo: Function;
   cloneInfo: any;
@@ -21,13 +21,14 @@ export default function Project({
   setCloneInfo,
   cloneInfo,
 }: ProjectProps) {
+  console.log(cloneInfo);
   const openInNewTab = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
     <div className="project">
       {image ? <img src={image} alt="" /> : null}
-      <div className="made-with">
+      <div className="made-with ">
         {madeWith.map((e: string, i: number) => (
           <p key={i}>{e}</p>
         ))}
@@ -37,13 +38,17 @@ export default function Project({
         <p>Github servers hosting </p>
         <div className="project-buttons">
           <button onClick={() => openInNewTab(live)}>Live {"<~>"}</button>
-          <button onClick={() => openInNewTab(github)}>Github {">="}</button>
-          <FaRegClone
-            onClick={() => {
-              setIsOpen(true);
-              setCloneInfo(cloneInfo);
-            }}
-          />
+          {github && (
+            <button onClick={() => openInNewTab(github)}>Github {">="}</button>
+          )}
+          {cloneInfo.clone && (
+            <FaRegClone
+              onClick={() => {
+                setIsOpen(true);
+                setCloneInfo(cloneInfo);
+              }}
+            />
+          )}
         </div>
       </div>
     </div>

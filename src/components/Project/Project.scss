@@ -1,8 +1,7 @@
-
 .project {
   width: 24%;
   border: 1px solid #abb2bf;
- 
+
   img {
     height: 201px;
     width: 100%;
@@ -11,11 +10,11 @@
   .made-with {
     display: flex;
     gap: 10px;
-    border: 1px solid #abb2bf;
+    border-bottom: 1px solid #abb2bf;
     padding: 10px 20px;
   }
   .project-info {
-    padding: 10px 20px;
+    padding: 0px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -23,22 +22,21 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      svg{
+      svg {
         color: #fff;
         cursor: pointer;
-        transition: .3s;
+        transition: 0.3s;
         object-fit: cover;
-        &:hover{
-          transform:scale(1.15);
+        &:hover {
+          transform: scale(1.15);
         }
-       }
+      }
     }
   }
- 
+
   h3 {
     margin-top: 10px;
   }
-  
 }
 
 @media screen and (max-width: 1350px) {

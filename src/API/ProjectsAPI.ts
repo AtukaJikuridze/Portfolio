@@ -8,7 +8,36 @@ import ModernWatch from "../images/projects/ModernWatch.webp";
 import HyperBase from "../images/projects/HyperBase.webp";
 import ModernBank from "../images/projects/ModernBank.webp";
 import CustomizedTodo from "../images/projects/Customized-Todo.webp";
+import TintingLaboratory from "../images/projects/tinting-laboratory.webp";
+import MyMovies from "../images/projects/mymovies.webp";
+import Moviesgo from "../images/projects/moviesgo.webp";
 export const ProjectsAPI = {
+  onserviceProjects: [
+    {
+      image: TintingLaboratory,
+      title: "Tinting Laboratory",
+      madeWith: ["PHP", "SCSS", "JS", "JQUERY", "MYSQL"],
+      live: "https://tintinglaboratory.com/",
+      github: null,
+      clone: null,
+    },
+    {
+      image: MyMovies,
+      title: "MyMovies",
+      madeWith: ["React.js", "Tailwind", "MYSQL", "PHP"],
+      live: "https://mymovies.cc/",
+      github: null,
+      clone: null,
+    },
+    {
+      image: Moviesgo,
+      title: "Moviesgo",
+      madeWith: ["PHP", "MYSQL", "SCSS", "JS", "JQUERY"],
+      live: "https://moviesgo.ge/",
+      github: null,
+      clone: null,
+    },
+  ],
   completedProjects: [
     {
       image: MovieWeb,

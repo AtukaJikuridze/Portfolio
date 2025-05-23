@@ -11,11 +11,11 @@
 .project .made-with {
   display: flex;
   gap: 10px;
-  border: 1px solid #abb2bf;
+  border-bottom: 1px solid #abb2bf;
   padding: 10px 20px;
 }
 .project .project-info {
-  padding: 10px 20px;
+  padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;

@@ -21,10 +21,10 @@ export default function ProjectsPage({
           </h2>
         </div>
 
-        <SectionTitle title="completed-projects" />
+        <SectionTitle title="onservice-projects" />
 
         <div className="team-projects projects-main">
-          {ProjectsAPI.completedProjects.map((e, i) => (
+          {ProjectsAPI.onserviceProjects.map((e, i) => (
             <Project
               setIsOpen={setIsOpen}
               key={i}
@@ -38,6 +38,31 @@ export default function ProjectsPage({
                 title: e.title,
                 clone: e.clone,
               }}
+            />
+          ))}
+        </div>
+
+        <SectionTitle title="completed-projects" />
+
+        <div className="team-projects projects-main">
+          {ProjectsAPI.completedProjects.map((e, i) => (
+            <Project
+              setIsOpen={setIsOpen}
+              key={i}
+              madeWith={e.madeWith}
+              title={e.title}
+              image={e.image}
+              live={e.live}
+              github={e.github}
+              setCloneInfo={setCloneInfo}
+              cloneInfo={
+                e.clone !== null
+                  ? {
+                      title: e.title,
+                      clone: e.clone,
+                    }
+                  : null
+              }
             />
           ))}
         </div>
