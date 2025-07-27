@@ -14,14 +14,7 @@ import Moviesgo from "../images/projects/moviesgo.webp";
 import MyAnime from "../images/projects/myanime.webp";
 export const ProjectsAPI = {
   onserviceProjects: [
-    {
-      image: MyAnime,
-      title: "MyAnime",
-      madeWith: ["Next.js", "Tailwind", "MYSQL", "PHP"],
-      live: "https://myanime.ge/",
-      github: null,
-      clone: null,
-    },
+   
     {
       image: TintingLaboratory,
       title: "Tinting Laboratory",
